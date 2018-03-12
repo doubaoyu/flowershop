@@ -1,0 +1,338 @@
+body {
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #f3f3f4;
+    font-size: 13px;
+    color: #676a6c;
+    overflow-x: hidden;
+}
+html, body {
+    height: 100%;
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+.gray-bg {
+  background-color: #f3f3f4;
+}
+.white-bg {
+  background-color: #ffffff;
+}
+.clear {
+  display: block;
+  overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    background: #f3f3f4;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: #2f4050;
+}
+.nav-header {
+    padding: 33px 25px;
+    background: url('../image/header-profile.png') no-repeat;
+}
+.nav-header a {
+  color: #DFE4ED;
+}
+.nav-header .people{
+  text-align: center;
+}
+.nav-header .people .name {
+  margin-top: 5px;
+}
+.nav-header .text-muted {
+  color: #8095a8;
+  margin-top: 5px;
+  display: block;
+}
+.nav-header .text-muted:hover{
+    color: #0099cb;
+}
+.nav > li > a {
+  color: #a7b1c2;
+  font-weight: 600;
+  padding: 14px 20px 14px 25px;
+}
+.nav > li > a i {
+  margin-right: 6px;
+}
+.navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus, .navbar-default .nav > li.active > a {
+  background-color: #293846;
+  color: #fff;
+}
+.page-wrapper{
+  min-height: 376px;
+  padding: 0 15px;
+  position: relative;
+}
+.navbar-static-side {
+  z-index: 2001;
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: #2f4050;
+}
+.page-wrapper {
+  position: inherit;
+  margin: 0 0 0 200px;
+  min-height: 400px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e7eaec;
+}
+.dashboard-header {
+  border-top: 0;
+  padding: 20px 20px 20px 20px;
+}
+.dashboard-header h2 {
+  margin-top: 10px;
+  font-size: 26px;
+}
+.breadcrumb {
+  background: #ffffff;
+  padding: 0;
+  margin-bottom: 0;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li a {
+  color: inherit;
+}
+.breadcrumb > .active {
+  color: inherit;
+}
+.wrapper-content {
+  min-height: 300px;
+  margin: 20px 10px 50px;
+  padding: 15px 20px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+table.dataTable thead th, table.dataTable thead td,
+table.dataTable tbody th, table.dataTable tbody td{
+  text-align: center;
+}
+.m-b-sm {
+    margin-bottom: 20px;
+}
+.tbEdit td{
+  padding-bottom: 10px;
+}
+.tbEdit td input, .tbEdit td textarea, .tbEdit td select{
+  width: 240px;
+  padding: 5px;
+  border: 1px solid #D2D2D2;
+}
+.tbEdit td textarea{
+  min-height: 100px;
+}
+.tbEdit tr:last-child td{
+  padding-top: 20px;
+}
+
+/* 数量加减 */
+.numEdit {
+    width: 240px;
+    height: 30px;
+    line-height: 30px;
+}
+.numEdit span {
+    height: 28px;
+    width: 28px;
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #E1E1E1;
+    cursor: pointer;
+}
+.numEdit .numDetail {
+    width: 60px;
+    border-left: 0;
+    border-right: 0;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #E1E1E1;
+    cursor: pointer;
+    padding-bottom: 0;
+    position: relative;
+    top: 1px;
+}
+.numEdit span {
+    height: 28px;
+    width: 28px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #E1E1E1;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+/* 上传多张图片 */
+.upload_warp_img_div_del {
+  position: absolute;
+  top: 6px;
+  width: 16px;
+  right: 4px;
+}
+.upload_warp_img_div_top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  line-height: 30px;
+  text-align: left;
+  color: #fff;
+  font-size: 12px;
+  text-indent: 4px;
+}
+.upload_warp_img_div_text {
+  white-space: nowrap;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.upload_warp_img_div img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+.upload_warp_img_div {
+  position: relative;
+  height: 100px;
+  width: 120px;
+  border: 1px solid #ccc;
+  margin: 0px 20px 20px 0;
+  float: left;
+  line-height: 100px;
+  display: table-cell;
+  text-align: center;
+  background-color: #eee;
+  cursor: pointer;
+}
+.upload_warp_img {
+  border-top: 1px solid #D2D2D2;
+  padding: 20px 0 0 20px;
+  overflow: hidden
+}
+.upload_warp_text {
+  text-align: left;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  text-indent: 20px;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+}
+.upload_warp_right {
+  float: left;
+  width: 57%;
+  margin-left: 2%;
+  height: 100%;
+  border: 1px dashed #999;
+  border-radius: 4px;
+  line-height: 130px;
+  color: #999;
+}
+.upload_warp_left img {
+  margin-top: 32px;
+}
+.upload_warp_left {
+  float: left;
+  width: 40%;
+  height: 100%;
+  border: 1px dashed #999;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.upload_warp {
+  margin: 14px;
+  height: 130px;
+}
+.upload {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 590px;
+  box-shadow: 0px 1px 0px #ccc;
+  border-radius: 4px;
+}
+.hello {
+  width: 590px;
+  text-align: center;
+}
+.tbEdit td input#upload_file{
+  border: none;
+}
+
+.uploadTs{
+  color: red;
+  margin: 15px 0 5px;
+  font-size: 12px;
+}
+/* 上传图片 */
+.tbEdit .images .img {
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: inset 0px 1px 20px 5px #ddd;
+    text-align: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 180px;
+    height: 120px;
+    border: 1px solid #ddd;
+}
+.tbEdit .addhao {
+    width: 180px;
+    height: 120px;
+    background: url('../image/addPhoto.png') no-repeat center;
+    background-size: 50% auto;
+}
+.tbEdit .img input {
+    width: 178px;
+    height: 118px;
+    opacity: 0;
+}
+.tbEdit .img .on {
+    display: inline-block;
+    text-align: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 180px;
+    height: 120px;
+    display: none;
+    position: relative;
+    overflow: hidden;
+    line-height: 120px;
+}
+.tbEdit .img .on img {
+    width: 158px;
+    height: auto;
+    margin: 0 10px;
+    line-height: 120px;
+}
+.tbEdit .img .xian {
+    width: 180px;
+    height: 120px;
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+    display: none;
+    z-index: 2;
+}
+.tbEdit .img .chahao {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('../image/del.png') no-repeat center;
+    background-size: 60% auto;
+    top: 5px;
+    right: 5px;
+    display: none;
+    z-index: 2;
+}
